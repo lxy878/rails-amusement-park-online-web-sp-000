@@ -12,6 +12,7 @@ class AttractionsController < ApplicationController
   end
 
   def new
+<<<<<<< HEAD
     @attraction = Attraction.new
   end
 
@@ -38,4 +39,17 @@ class AttractionsController < ApplicationController
     def attraction_params
       params.require(:attraction).permit(:name, :min_height, :happiness_rating, :nausea_rating, :tickets)
     end
+=======
+  end
+
+  def create
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+>>>>>>> 9318a4d9679102b58cec253e3c6f3306451afc1a
 end

@@ -5,7 +5,10 @@ class Ride < ActiveRecord::Base
   def take_ride
     user = self.user
     attraction = self.attraction
+<<<<<<< HEAD
     message = " "
+=======
+>>>>>>> 9318a4d9679102b58cec253e3c6f3306451afc1a
     if user.tickets < attraction.tickets || user.height < attraction.min_height
       message = 'Sorry.'
       if user.tickets < attraction.tickets
@@ -21,7 +24,10 @@ class Ride < ActiveRecord::Base
       user.nausea += attraction.nausea_rating
       user.happiness += attraction.happiness_rating
       user.save
+<<<<<<< HEAD
       message = "Thanks for riding the #{attraction.name}!"
+=======
+>>>>>>> 9318a4d9679102b58cec253e3c6f3306451afc1a
     end
   end
 

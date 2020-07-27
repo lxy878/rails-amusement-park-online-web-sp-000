@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 <%= flash[:message] if flash[:message] %>
 <%= 'ADMIN' if @user.admin %>
 <p>Name: <%= @user.name %></p>
 <p>Tickets: <%= @user.tickets%></p>
 <p>Mood: <%= @user.mood %></p>
 <p>Height: <%= @user.height %></p>
+=======
+<%= 'ADMIN' if @user.admin %>
+<p>Name: <%= @user.name %></p>
+<p>tickets: <%= @user.tickets%></p>
+<p>Mood: <%= @user.mood %></p>
+<p>height: <%= @user.height %></p>
+>>>>>>> 9318a4d9679102b58cec253e3c6f3306451afc1a
 <%= link_to 'See attractions', attractions_path %>
 <%= link_to 'Log Out', logout_path%>

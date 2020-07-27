@@ -1,4 +1,5 @@
 <p>Name: <%= @attraction.name %></p>
+<<<<<<< HEAD
 <p>Total Number of Users: <%= @attraction.total_rides %></p>
 <p>Ticket Requirement: <%= @attraction.tickets %></p>
 <p>Height Requirement: <%= @attraction.min_height %></p>
@@ -12,4 +13,16 @@
     <%= hidden_field_tag :id, @attraction.id %>
     <%= submit_tag :'Go on this ride'%>
   <% end %>
+=======
+<p>Name: <%= @attraction.name %></p>
+<p>Name: <%= @attraction.name %></p>
+<p>Name: <%= @attraction.name %></p>
+<p>Name: <%= @attraction.name %></p>
+<p>Name: <%= @attraction.name %></p>
+
+<% if @user.admin %>
+
+<% else %>
+  <%= link_to 'Go on this ride', rides_path, method: :post%>
+>>>>>>> 9318a4d9679102b58cec253e3c6f3306451afc1a
 <% end %>
